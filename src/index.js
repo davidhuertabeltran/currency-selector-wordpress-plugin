@@ -10,11 +10,10 @@ wp.blocks.registerBlockType("myplugin/currency-selector-david", {
     description: "Select a currency to display in your post or page",
     attributes: {
         currency: {type: "string"},
-        textAlignment: {type: "string", default: "left"},
+        textAlignment: {type: "string"},
         date: {type: "string" },
         backgroundColor: {type: "string", default: "EBEBEB"},
-        textColor: {type: "string", default: "0A1414"},
-        textAlignment: {type: "string", default: "center"},
+        textColor: {type: "string", default: "0A1414"}
     },
     edit: EditComponent,
     save: function(props) {
