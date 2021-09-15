@@ -27,7 +27,18 @@ function EditComponent(props) {
     const [ error, setError ] = useState(null);
 
     function getYesterday() {
+        
         let yesterday = new Date((new Date()).valueOf() - 1000*60*60*24);
+        let yesterdayUTC = yesterday.getUTCDay();
+        let isSaturday = [6].includes(yesterdayUTC);
+        let isSunday = [0].includes(yesterdayUTC);
+
+        if (isSaturday) {
+            yesterday = new Date(yesterday.valueOf() - 1000*60*60*24);
+        }
+        if (isSunday) {
+            yesterday = new Date(yesterday.valueOf() - 1000*60*60*24*2);
+        }
         return yesterday.toISOString().split('T')[0];
     }
 
