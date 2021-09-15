@@ -1,0 +1,16 @@
+.currency-plugin-frontend {
+    padding-bottom: 10px;
+
+    .currency-calendar {
+        border-radius: 3px;
+        border: 1px solid lightgray !important;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .error-plugin-date-weekend {
+        font-style: italic;
+        margin-left: 10px;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}

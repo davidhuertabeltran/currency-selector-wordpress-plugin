@@ -1,0 +1,37 @@
+.edit-currency {
+    border: 1px solid rgb(143, 142, 142);
+
+    .currency-plugin-title {
+        text-align: center;
+        font-size: 1.2rem;     
+    }
+
+    .currency-dropdown {
+
+        label {    
+            margin-left: 10px !important;
+        }
+
+        .components-input-control__container {
+            width: 160px;
+            margin-left: 10px;
+            border-radius: 3px;
+
+            .components-select-control__input {
+                padding: 0 0 0 10px;
+            }
+        }
+    }
+
+    .calendar-ratio {
+        margin-left: 10px;
+        width: 160px;
+    }
+
+    .error-plugin-date-weekend {
+        font-style: italic;
+        margin-left: 10px;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}
